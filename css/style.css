@@ -1,0 +1,160 @@
+:root {
+    --primary-font: "Rubik", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --primary-text-color: #000;
+    --secondary-text-color: #616161;
+    --accent-text-color:#ec5863;
+    --accent-color: #D71EF7
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer
+}
+
+button {
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+
+body{
+    font-family: var(--primary-font); 
+}
+
+/*====================== COMPONENTS =====================*/
+
+.download-btn {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    cursor: pointer;
+    /*color: #fcfdfe;*/
+    }
+    
+.download-btn:hover,
+.download-btn:focus{
+
+    color: var(--accent-color) ;
+    }
+
+.section-description {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 138%;
+    letter-spacing: 0.08em;
+    color: var(--primary-text-color);
+}
+
+.section-title{
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: var(--primary-text-color);
+}
+    
+/*====================== /COMPONENTS =====================*/
+  
+
+/*===================== HEADER =========================*/
+
+.logo-link {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--primary-text-color);
+}
+
+
+.menu-item {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    color: var(--primary-text-color);
+}
+
+/*===================== /HEADER =========================*/
+
+
+/*=========================== HERO =======================*/
+
+.hero-title {
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 126%;
+    color: var(--primary-text-color);
+}
+
+.watch-caption {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 126%;
+    letter-spacing: 0.08em;
+    color: var(--secondary-text-color);
+}
+
+.watch-text {
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 126%;
+    letter-spacing: 0.17em;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+}
+
+/*===================== /HERO =========================*/
+
+
+/*=========================== REGISTRATION =======================*/
+
+
+
+/*=========================== /REGISTRATION =======================*/
+
+/*=========================== EXPERT =======================*/
+
+.stats-value {
+font-weight: 700;
+font-size: 36px;
+letter-spacing: 0.14em;
+text-align: center;
+color: var(--accent-text-color);
+}
+
+.stats-label {
+font-weight: 700;
+font-size: 11px;
+letter-spacing: 0.37em;
+text-transform: uppercase;
+text-align: center;
+color: var(--primary-text-color);
+}
+
+/*=========================== /EXPERT =======================*/
+
+/*=========================== SUPPORT =======================*/
+.support-title {
+font-weight: 700;
+font-size: 16px;
+line-height: 138%;
+letter-spacing: 0.08em;
+text-align: center;
+color: var(--primary-text-color);
+}
+
+/*=========================== /SUPPORT =======================*/
+
+/*=========================== FOOTER =======================*/
+
+
+/*=========================== /FOOTER =======================*/
