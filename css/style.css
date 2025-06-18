@@ -9,6 +9,7 @@
     --btn-accent-collor: #fcfdfe;
     --btn-header: #4285F4;
     --btn-red: #EC5863;
+    --background: #fafbfd;
 
 }
 
@@ -98,6 +99,8 @@ color: var(--accent-text-color);
     line-height: 138%;
     letter-spacing: 0.08em;
     color: var(--primary-text-color);
+    padding-top: 13px;
+    padding-bottom: 24px;
 }
 
 .section-title{
@@ -105,6 +108,8 @@ color: var(--accent-text-color);
     font-size: 44px;
     line-height: 126%;
     color: var(--primary-text-color);
+    margin-bottom: 47px;
+    padding-top: 14px;
 }
     
 /*====================== /COMPONENTS =====================*/
@@ -143,6 +148,7 @@ color: var(--accent-text-color);
 .page-header {
  padding-top: 37px;
  padding-bottom: 37px;
+ background-color: var(--background);
 }
 .page-header-container {
     display: flex;
@@ -156,7 +162,6 @@ color: var(--accent-text-color);
 .menu-list {
     display: flex;
     align-items: center;
-
 }
 .menu-link {
     color: var(--primary-text-color);
@@ -167,11 +172,21 @@ color: var(--accent-text-color);
 
 /*=========================== HERO =======================*/
 
+.hero-section {
+   padding-top: 79px;
+   padding-bottom: 79px;
+   background-color: var(--background); 
+   width: 100%;
+}
+.hero-container {
+    display: flex;
+}
 .hero-title {
     font-weight: 700;
     font-size: 44px;
     line-height: 126%;
     color: var(--primary-text-color);
+    padding-top: 163px;
 }
 
 .watch-caption {
@@ -180,6 +195,7 @@ color: var(--accent-text-color);
     line-height: 126%;
     letter-spacing: 0.08em;
     color: var(--secondary-text-color);
+    padding-bottom: 5px;
 }
 
 .watch-text {
@@ -190,12 +206,20 @@ color: var(--accent-text-color);
     text-transform: uppercase;
     color: var(--primary-text-color);
 }
-.hero-section {
-   padding-top: 79px;
-   padding-bottom: 79px;
- 
+.watch-text-group {
+  display: flex;
+  flex-direction: column;
 }
-
+.watch-img {
+    padding-right: 12px;
+}
+.container-hero-info {
+    padding-left: 70px; 
+}
+.container-hero-video {
+    display: flex;
+    padding-top: 148px;
+}
 /*===================== /HERO =========================*/
 
 
@@ -203,6 +227,7 @@ color: var(--accent-text-color);
 .registration-section {
     padding-top: 104px;
     padding-bottom: 116px
+    
 }
 
 
@@ -210,6 +235,9 @@ color: var(--accent-text-color);
 
 /*=========================== EXPERT =======================*/
 
+.expert-section {
+    background-color: var(--background);
+}
 .stats-value {
 font-weight: 700;
 font-size: 36px;
@@ -249,12 +277,9 @@ color: var(--primary-text-color);
     padding-bottom: 75px;
 }
 
-.section-description{
-    margin-bottom: 47px;
-    padding-top: 14px;
-    text-align: center;
+.support-text {
+   text-align: center;
 }
-
 .expert-container {
     padding-top: 104px;
     padding-bottom: 116px;
