@@ -10,6 +10,7 @@
     --btn-header: #4285F4;
     --btn-red: #EC5863;
     --background: #fafbfd;
+    --secondary-background:#fff;
 
 }
 
@@ -225,11 +226,21 @@ color: var(--accent-text-color);
 
 /*=========================== REGISTRATION =======================*/
 .registration-section {
+    display: flex;
+    align-items: center;
     padding-top: 104px;
     padding-bottom: 116px
-    
 }
-
+.container-registration-text {
+    padding-left: 149px;
+    padding-right: 168px;
+    padding-top: 231px;
+    padding-bottom: 231px;
+}
+.registration-text {
+    padding-top: 12px;
+    padding-bottom: 24px;
+}
 
 /*=========================== /REGISTRATION =======================*/
 
@@ -245,7 +256,6 @@ letter-spacing: 0.14em;
 text-align: center;
 color: var(--accent-text-color);
 }
-
 .stats-label {
 font-weight: 700;
 font-size: 11px;
@@ -253,15 +263,55 @@ letter-spacing: 0.37em;
 text-transform: uppercase;
 text-align: center;
 color: var(--primary-text-color);
+padding-top: 5px;
 }
-
+.support-container {
+    padding-top: 104px;
+}
+.stats {
+    margin-right: 249px;
+    margin-left: 249px;
+    border-radius: 16px;
+    width: 654px;
+    height: 117px;
+    box-shadow: 0 2px 24px 0 rgba(88, 126, 236, 0.15);
+    background: var(--secondary-background);
+} 
+.stats-table {
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top: 28px;
+   padding-bottom: 28px;
+}
+.stats-table li:nth-child(1) {
+  margin-right: 99px;
+}
+.stats-table li:nth-child(2) {
+  margin-right: 104px;
+}
+.stats-table li:nth-child(3) {
+  margin-right: 0;
+}
+.expert-info {
+    display: flex;
+}
+.expert-section-text {
+    padding-left: 92px;
+    padding-right: 72px;
+    padding-top: 130px;
+    padding-bottom: 168px;
+}
+.expert-section-video {
+    padding-top: 79px;
+    padding-bottom: 116px;
+    padding-right: 71px;
+}
 /*=========================== /EXPERT =======================*/
 
 /*=========================== SUPPORT =======================*/
 
-.section-title {
-    text-align: center;
-}
+
 .support-title {
      font-weight: 700;
      font-size: 16px;
