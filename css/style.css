@@ -11,6 +11,9 @@
     --btn-red: #EC5863;
     --background: #fafbfd;
     --secondary-background:#fff;
+    --red-spots: #EC5863;
+    --red-blob: #EC5863;
+
 
 }
 
@@ -81,6 +84,7 @@ body{
     padding-right: 29px;
     background-color: var(--btn-red);
     border-radius: 5px;
+     z-index: 1;
     }
     
 .download-btn:hover,
@@ -112,7 +116,7 @@ color: var(--accent-text-color);
     margin-bottom: 47px;
     padding-top: 14px;
 }
-    
+  
 /*====================== /COMPONENTS =====================*/
   
 
@@ -141,6 +145,7 @@ color: var(--accent-text-color);
     padding-left: 30px;
     padding-right: 30px;
  background-color: var(--btn-header);
+ margin-right: 43px;
 }
 
 .menu-item:not(:last-child) {
@@ -174,6 +179,7 @@ color: var(--accent-text-color);
 /*=========================== HERO =======================*/
 
 .hero-section {
+    position: relative;
    padding-top: 79px;
    padding-bottom: 79px;
    background-color: var(--background); 
@@ -181,6 +187,7 @@ color: var(--accent-text-color);
 }
 .hero-container {
     display: flex;
+    z-index: 1;
 }
 .hero-title {
     font-weight: 700;
@@ -188,6 +195,28 @@ color: var(--accent-text-color);
     line-height: 126%;
     color: var(--primary-text-color);
     padding-top: 163px;
+}
+
+.hero-bg-blob {
+    position: absolute;
+    top: 0;
+    width: 296px;
+    height: 700px;
+    background-color: var(--red-spots);
+    border-radius: 30px 0 0 30px;
+    margin-left: 857px;
+    z-index: 0;
+  
+}
+.hero-bg-blob-next{
+    position: absolute;
+    top: 0;
+    width: 296px;
+    height: 700px;
+    height: 100%;
+    margin-left: 857px;
+    background-color: var(--red-spots);
+    z-index: 0;
 }
 
 .watch-caption {
@@ -216,10 +245,17 @@ color: var(--accent-text-color);
 }
 .container-hero-info {
     padding-left: 70px; 
+    z-index: 1;
+    width: 497px;
+    height: 220px ;
 }
 .container-hero-video {
     display: flex;
     padding-top: 148px;
+}
+.container-hero-img {
+   margin-right: 53px;
+    z-index: 1; 
 }
 /*===================== /HERO =========================*/
 
@@ -248,6 +284,8 @@ color: var(--accent-text-color);
 
 .expert-section {
     background-color: var(--background);
+    position: relative;
+    
 }
 .stats-value {
 font-weight: 700;
@@ -268,7 +306,47 @@ padding-top: 5px;
 .support-container {
     padding-top: 104px;
 }
+.blob {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+  color: var(--red-blob);
+  z-index: 0;
+}
+.blob-big {
+  width: 128px;
+  height: 128px;
+  background-image: url("../img/blob\ 128x28.svg");
+  border-radius: 30px;
+}
+
+.blob-medium {
+  width: 97px;
+  height: 97px;
+  background-image: url("../img/blob\ 97x97.svg");
+  border-radius: 30px;
+}
+.blob-small {
+  width: 65px;
+  height: 65px;
+  background-image: url("../img/blob\ 66x66.svg");
+  border-radius: 16px;
+ 
+}  
+.blob-move-big {
+    left: 555px;
+}
+.blob-move-medium {
+left: 209px;
+bottom: 50px;
+}
+.blob-move-small {
+top: 59px;
+}
 .stats {
+    position: relative;
     margin-right: 249px;
     margin-left: 249px;
     border-radius: 16px;
@@ -278,11 +356,13 @@ padding-top: 5px;
     background: var(--secondary-background);
 } 
 .stats-table {
+    position: relative;
     display: flex;
    justify-content: center;
    align-items: center;
    padding-top: 28px;
    padding-bottom: 28px;
+   z-index: 2;
 }
 .stats-table li:nth-child(1) {
   margin-right: 99px;
@@ -351,10 +431,6 @@ padding-top: 5px;
     box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.05); /* ВОТ ОНА */
     transition: transform 0.3s ease;
 }
-
-
-   
-
 
 
 /*=========================== /SUPPORT =======================*/
