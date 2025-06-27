@@ -355,6 +355,13 @@ top: 59px;
     box-shadow: 0 2px 24px 0 rgba(88, 126, 236, 0.15);
     background: var(--secondary-background);
 } 
+.stats-block {
+    position: relative;
+}
+.stats-container {
+    position: relative;
+    z-index: 3;
+}
 .stats-table {
     position: relative;
     display: flex;
